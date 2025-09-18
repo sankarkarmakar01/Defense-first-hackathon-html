@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/indian_flag.png" type="image/png" />
+    <title>Lecture 5</title>
+  </head>
+  <body>
+    <font face="Arial">
+      <header>
+        <big>
+          <big>
+            <nav>
+              <span> &nbsp;&nbsp;&nbsp;<strong>📝 Defense Draft</strong> </span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <small>
+                <span
+                  ><a href="./index.html"
+                    ><abbr title="Home"><b>Home</b></abbr></a
+                  ></span
+                >
+
+                &nbsp;&nbsp;
+
+                <span
+                  ><a href="./lecture1.html"
+                    ><abbr
+                      title="Introduction to Web Development - How Internet Works |
+                  Client-Server Architecture | IP Address | MAC Address | DNS"
+                      ><b>Lecture 1</b></abbr
+                    ></a
+                  ></span
+                >
+                &nbsp;&nbsp;
+                <span
+                  ><a href="./lecture2.html"
+                    ><abbr
+                      title="Introduction to HTML - What is HTML | Heading | Paragraph |
+                  Anchor Tag | Image Element"
+                      ><b>Lecture 2</b></abbr
+                    ></a
+                  ></span
+                >
+                &nbsp;&nbsp;
+                <span
+                  ><a href="./lecture3.html"
+                    ><abbr
+                      title="Introduction List & Table in HTML - Ordered List | Unordered
+                  List | Nested List | Tables in HTML"
+                      ><b>Lecture 3</b></abbr
+                    ></a
+                  ></span
+                >
+                &nbsp;&nbsp;
+                <span
+                  ><a href="./lecture4.html"
+                    ><abbr
+                      title="File Path in HTML | HTML BoilerPlate | Div Tag | Class & Id attribute"
+                      ><b>Lecture 4</b></abbr
+                    ></a
+                  ></span
+                >
+                &nbsp;&nbsp;
+                <span
+                  ><a href="./lecture5.html"
+                    ><abbr
+                      title="Introduction to HTML Forms - Full Explaination of Form Tag,
+                  Input Tags and attributes"
+                      ><b>Lecture 5</b></abbr
+                    ></a
+                  ></span
+                >&nbsp;&nbsp;
+                <span
+                  ><a href="./lecture6.html"
+                    ><abbr
+                      title="Media Tags | Multipage Website | Deploy First Project in
+                  Internet"
+                      ><b>Lecture 6</b></abbr
+                    ></a
+                  ></span
+                >
+              </small>
+            </nav>
+          </big>
+        </big>
+
+        <hr />
+      </header>
+
+      <main>
+        <section id="intro">
+          <h2>Introduction to HTML Forms 📩</h2>
+          <p>
+            In HTML, a <b>form</b> is used to collect <b>user input</b>. They
+            are essential for interactive websites, allowing users to submit
+            data, make selections, and interact with web applications.
+          </p>
+
+          <p>
+            Forms contain various input elements like <b>text fields</b>,
+            <b>checkboxes</b>, <b>radio buttons</b>, and <b>dropdown menus</b>.
+            When a user submits a form, the data is sent to a server for
+            processing.
+          </p>
+          <center>
+            <img
+              src="https://gillencomputing.wordpress.com/wp-content/uploads/2016/05/htmlform.png"
+              alt="Form Structure Diagram"
+              width="700"
+            />
+          </center>
+        </section>
+
+        <section id="form-tag">
+          <h2>The &lt;form&gt; Tag</h2>
+          <p>
+            The <strong>&lt;form&gt;</strong> element is a container for all
+            form elements. It defines how the form data will be submitted.
+          </p>
+
+          <h3>Example:</h3>
+          <pre>
+&lt;form action="/submit-form" method="POST"&gt;
+  &lt;!-- Form elements go here --&gt;
+&lt;/form&gt;
+    </pre
+          >
+
+          <h3>Form Attributes</h3>
+          <ul>
+            <li>
+              <strong>action</strong>: Specifies where to send the form data
+              when submitted
+            </li>
+            <li>
+              <strong>method</strong>: Defines the HTTP method (GET or POST)
+            </li>
+            <li>
+              <strong>target</strong>: Specifies where to display the response
+            </li>
+            <li>
+              <strong>autocomplete</strong>: Enables or disables autocomplete
+            </li>
+          </ul>
+        </section>
+
+        <section id="input-tag">
+          <h2>The &lt;input&gt; Element</h2>
+          <p>
+            The <strong>&lt;input&gt;</strong> element is the most important
+            form element. It can be displayed in many ways, depending on the
+            <strong>type</strong> attribute.
+          </p>
+
+          <h3>Example:</h3>
+          <pre>
+&lt;input type="text" name="username" placeholder="Enter your username"&gt;
+    </pre
+          >
+
+          <h3>Common Input Attributes</h3>
+          <ul>
+            <li><strong>type</strong>: Specifies the input type</li>
+            <li><strong>name</strong>: Identifies the input field</li>
+            <li><strong>value</strong>: Specifies the default value</li>
+            <li>
+              <strong>placeholder</strong>: Provides a hint about the input
+            </li>
+            <li><strong>required</strong>: Makes input mandatory</li>
+          </ul>
+
+          <center>
+            <img
+              src="https://mycode.blog/sites/default/files/styles/webp/public/2022-05/htmlinputtypes.png.webp?itok=4w1NYPEs"
+              alt="Input Types Comparison"
+              width="700"
+            />
+          </center>
+        </section>
+
+        <section id="text-inputs">
+          <h2>Text Input Types</h2>
+
+          <h3>Text Input</h3>
+          <pre>&lt;input type="text" placeholder="Enter text here"&gt;</pre>
+          Output: <input type="text" placeholder="Enter text here" />
+
+          <h3>Password Input</h3>
+          <pre>&lt;input type="password" placeholder="Enter password"&gt;</pre>
+          Output: <input type="password" placeholder="Enter password" />
+
+          <h3>Email Input</h3>
+          <pre>
+&lt;input type="email" placeholder="Enter email address"&gt;</pre
+          >
+          Output: <input type="email" placeholder="Enter email address" />
+
+          <h3>Number Input</h3>
+          <pre>&lt;input type="number" placeholder="Enter a number"&gt;</pre>
+          Output: <input type="number" placeholder="Enter a number" />
+        </section>
+
+        <section id="selection-inputs">
+          <h2>Selection Input Types</h2>
+
+          <h3>Radio Buttons</h3>
+          <p>Allow selection of <b>one option</b> from multiple choices:</p>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label>
+          <pre>
+&lt;input type="radio" name="gender" value="male"&gt; Male
+&lt;input type="radio" name="gender" value="female"&gt; Female
+&lt;input type="radio" name="gender" value="other"&gt; Other
+    </pre
+          >
+
+          <h3>Checkboxes</h3>
+          <p>Allow selection of <b>multiple options</b>:</p>
+          <input type="checkbox" name="hobby" value="reading" /> Reading
+          <input type="checkbox" name="hobby" value="sports" /> Sports
+          <input type="checkbox" name="hobby" value="music" /> Music
+          <pre>
+&lt;input type="checkbox" name="hobby" value="reading"&gt; Reading
+&lt;input type="checkbox" name="hobby" value="sports"&gt; Sports
+&lt;input type="checkbox" name="hobby" value="music"&gt; Music
+    </pre
+          >
+
+          <center>
+            <img
+              src="https://assets.justinmind.com/wp-content/uploads/2018/04/checkbox-v-radio-buttons-header-3-768x492.png"
+              alt="Radio vs Checkbox Comparison"
+              width="700"
+            />
+          </center>
+        </section>
+
+        <section id="other-inputs">
+          <h2>Other Input Types</h2>
+
+          <h3>Date Input</h3>
+          <pre>&lt;input type="date"&gt;</pre>
+          Output: <input type="date" />
+
+          <h3>Color Input</h3>
+          <pre>&lt;input type="color"&gt;</pre>
+          Output: <input type="color" />
+
+          <h3>Range Input</h3>
+          <pre>&lt;input type="range" min="0" max="100"&gt;</pre>
+          Output: <input type="range" min="0" max="100" />
+
+          <h3>File Input</h3>
+          <pre>&lt;input type="file"&gt;</pre>
+          Output: <input type="file" />
+        </section>
+
+        <section id="textarea">
+          <h2>&lt;textarea&gt; Element</h2>
+          <p>
+            The <strong>&lt;textarea&gt;</strong> element defines a
+            <b>multi-line text input</b> control:
+          </p>
+          <pre>
+&lt;textarea rows="4" cols="50" placeholder="Enter your message here"&gt;&lt;/textarea&gt;
+    </pre
+          >
+          Output:
+          <textarea
+            rows="4"
+            cols="50"
+            placeholder="Enter your message here"
+          ></textarea>
+
+          <h3>Textarea Attributes</h3>
+          <ul>
+            <li><strong>rows</strong>: Visible number of lines</li>
+            <li><strong>cols</strong>: Visible width</li>
+            <li><strong>placeholder</strong>: Input hint</li>
+          </ul>
+        </section>
+
+        <section id="select">
+          <h2>&lt;select&gt; Dropdown</h2>
+          <p>
+            The <strong>&lt;select&gt;</strong> element defines a dropdown list:
+          </p>
+
+          <select>
+            <option value="">Select an option</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+          <pre>
+&lt;select&gt;
+  &lt;option value=""&gt;Select an option&lt;/option&gt;
+  &lt;option value="html"&gt;HTML&lt;/option&gt;
+  &lt;option value="css"&gt;CSS&lt;/option&gt;
+  &lt;option value="javascript"&gt;JavaScript&lt;/option&gt;
+&lt;/select&gt;
+    </pre
+          >
+
+          <h3>Multiple Selection</h3>
+          <select multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+          </select>
+          <pre>
+&lt;select multiple&gt;
+  &lt;option value="html"&gt;HTML&lt;/option&gt;
+  &lt;option value="css"&gt;CSS&lt;/option&gt;
+  &lt;option value="javascript"&gt;JavaScript&lt;/option&gt;
+  &lt;option value="python"&gt;Python&lt;/option&gt;
+&lt;/select&gt;
+    </pre
+          >
+        </section>
+
+        <section id="buttons">
+          <h2>Button Elements</h2>
+
+          <h3>Submit Button</h3>
+          <pre>&lt;input type="submit" value="Submit Form"&gt;</pre>
+          Output: <input type="submit" value="Submit Form" />
+
+          <h3>Reset Button</h3>
+          <pre>&lt;input type="reset" value="Reset Form"&gt;</pre>
+          Output: <input type="reset" value="Reset Form" />
+
+          <h3>Button Element</h3>
+          <pre>&lt;button type="button"&gt;Click Me&lt;/button&gt;</pre>
+          Output: <button type="button">Click Me</button>
+
+          <center>
+            <img
+              src="https://yui.github.io/yui2/docs/yui_2.9.0_full/button/img/buttons.png"
+              alt="Button Types Comparison"
+              width="700"
+            />
+          </center>
+        </section>
+
+        <section id="example">
+          <h2>Example of a Complete Form 🧩</h2>
+          <p>
+            <i
+              >Here's a complete registration form example using various form
+              elements:</i
+            >
+          </p>
+
+          <form>
+            <fieldset>
+              <legend>Information About You</legend>
+              <label for="name">Full Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your full name"
+              /><br /><br />
+
+              <label for="email">Email Address:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+              /><br /><br />
+
+              <label for="password">Password:</label><br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Create a password"
+              /><br /><br />
+
+              <label for="dob">Date of Birth:</label><br />
+              <input type="date" id="dob" name="dob" required /><br /><br />
+
+              <label>Gender:</label><br />
+              <input type="radio" name="gender" id="male_2" value="male_2" />
+              <label for="male_2">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="female_2"
+                value="female_2"
+              />
+              <label for="female_2">Female</label>
+              <input type="radio" name="gender" id="other_2" value="other_2" />
+              <label for="other_2">Other</label><br /><br />
+
+              <label>Interests:</label><br />
+              <input type="checkbox" id="tech" name="interests" value="tech" />
+              <label for="tech">Technology</label>
+              <input
+                type="checkbox"
+                id="sports"
+                name="interests"
+                value="sports"
+              />
+              <label for="sports">Sports</label>
+              <input
+                type="checkbox"
+                id="books"
+                name="interests"
+                value="books"
+              />
+              <label for="books">Books</label><br /><br />
+
+              <label for="country">Country:</label><br />
+              <select id="country" name="country">
+                <option value="">Select your country</option>
+                <option value="united states">United States</option>
+                <option value="canada">Canada</option>
+                <option value="united kingdom">United Kingdom</option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option></select
+              ><br /><br />
+
+              <label for="bio">Bio:</label><br />
+              <textarea
+                id="bio"
+                name="bio"
+                rows="4"
+                cols="50"
+                placeholder="Tell us about yourself"
+              ></textarea>
+            </fieldset>
+
+            <br />
+            <input type="submit" value="Register" />
+            <input type="reset" value="Clear Form" />
+          </form>
+        </section>
+
+        <section>
+          <h2>All topics from this page are covered in this video lecture -</h2>
+          <p>Watch these video to reinforce what you've learned about HTML:</p>
+
+          <center>
+            <iframe
+              width="700"
+              height="400"
+              src="https://www.youtube.com/embed/a4j9R_DvZ8M?list=PLQEaRBV9gAFsistSzOgnD4cWgFGRVda4X"
+              title="HTML Forms From Beginner to Advance | HTML Full Course #04"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <p>
+              <a href="https://youtu.be/a4j9R_DvZ8M" target="_blank"
+                ><i>Watch this lecture on YouTube</i></a
+              >
+            </p>
+          </center>
+        </section>
+      </main>
+
+      <br /><br />
+      <hr />
+      <br />
+
+      <footer>
+        <center>
+          <table cellpadding="3" cellspacing="0" width="80%">
+            <tr>
+              <th colspan="4">
+                <h2>Defense Draft</h2>
+                <p>
+                  Your trusted digital notebook for organizing and protecting
+                  lecture notes
+                </p>
+              </th>
+            </tr>
+            <tr>
+              <center>
+                <th width="25%">About</th>
+                <th width="25%">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Links
+                </th>
+                <th width="25%">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company
+                </th>
+                <th width="25%">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support
+                </th>
+              </center>
+            </tr>
+            <tr valign="top">
+              <td>
+                <center>
+                  <p>
+                    <strong><i>Defense Draft</i></strong> helps students and
+                    professionals keep their notes safe, accessible, and well
+                    organized.
+                  </p>
+                </center>
+              </td>
+              <td>
+                <ul type="none">
+                  <center>
+                    <li><a href="./lecture1.html">Lecture 1</a></li>
+                    <li><a href="./lecture2.html">Lecture 2</a></li>
+                    <li><a href="./lecture3.html">Lecture 3</a></li>
+                    <li><a href="./lecture4.html">Lecture 4</a></li>
+                    <li><a href="./lecture5.html">Lecture 5</a></li>
+                    <li><a href="./lecture6.html">Lecture 6</a></li>
+                  </center>
+                </ul>
+              </td>
+              <td>
+                <ul type="none">
+                  <center>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Legal</a></li>
+                  </center>
+                </ul>
+              </td>
+              <td>
+                <ul type="none">
+                  <center>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">System Status</a></li>
+                  </center>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="center">
+                <hr />
+                <p>
+                  Copyright &copy; <i>2025 Defense Draft Pvt. Ltd.</i>
+                  <b>All rights reserved</b>.
+                  <br />
+                  <a href="#">Sitemap</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#"
+                    >Accessibility</a
+                  >&nbsp; | &nbsp;<a href="#">Language</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </footer>
+    </font>
+  </body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/indian_flag.png" type="image/png" />
+    <title>Lecture 4</title>
+  </head>
+  <body>
+    <font face="Arial">
+      <header>
+        <big>
+          <big>
+            <nav>
+              <span> &nbsp;&nbsp;&nbsp;<strong>📝 Defense Draft</strong> </span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <small>
+                <span
+                  ><a href="./index.html"
+                    ><abbr title="Home"><b>Home</b></abbr></a
+                  ></span
+                >
+
+                &nbsp;&nbsp;
+
+                <span
+                  ><a href="./lecture1.html"
+                    ><abbr
+                      title="Introduction to Web Development - How Internet Works |
+                  Client-Server Architecture | IP Address | MAC Address | DNS"
+                      ><b>Lecture 1</b></abbr
+                    ></a
+                  ></span
+                >
+                &nbsp;&nbsp;
+                <span
+                  ><a href="./lecture2.html"
+                    ><abbr
+                      title="Introduction to HTML - What is HTML | Heading | Paragraph |
+                  Anchor Tag | Image Element"
+                      ><b>Lecture 2</b></abbr
+                    ></a
+                  ></span
+                >
+                &nbsp;&nbsp;
+                <span
+                  ><a href="./lecture3.html"
+                    ><abbr
+                      title="Introduction List & Table in HTML - Ordered List | Unordered
+                  List | Nested List | Tables in HTML"
+                      ><b>Lecture 3</b></abbr
+                    ></a
+                  ></span
+                >
+                &nbsp;&nbsp;
+                <span
+                  ><a href="./lecture4.html"
+                    ><abbr
+                      title="File Path in HTML | HTML BoilerPlate | Div Tag | Class & Id attribute"
+                      ><b>Lecture 4</b></abbr
+                    ></a
+                  ></span
+                >
+                &nbsp;&nbsp;
+                <span
+                  ><a href="./lecture5.html"
+                    ><abbr
+                      title="Introduction to HTML Forms - Full Explaination of Form Tag,
+                  Input Tags and attributes"
+                      ><b>Lecture 5</b></abbr
+                    ></a
+                  ></span
+                >&nbsp;&nbsp;
+                <span
+                  ><a href="./lecture6.html"
+                    ><abbr
+                      title="Media Tags | Multipage Website | Deploy First Project in
+                  Internet"
+                      ><b>Lecture 6</b></abbr
+                    ></a
+                  ></span
+                >
+              </small>
+            </nav>
+          </big>
+        </big>
+
+        <hr />
+      </header>
+
+      <main>
+        <section id="file-paths">
+          <h2>What is File Path in HTML? 📂</h2>
+          <p>
+            In HTML, a <b><i>file path</i></b> tells the browser where to find
+            another file <i>(like an image, CSS, or another page)</i>. A website
+            is made of multiple files
+            <i>(HTML, CSS, JavaScript, images, fonts, etc.)</i>
+            and they must connect correctly using file paths.
+          </p>
+
+          <h3>Types of File Paths (relative, absolute)</h3>
+          <ul type="none">
+            <li>
+              <strong><u>Relative Path</u>:</strong> Directions to a file
+              starting from the current file's location.
+            </li>
+            <br />
+            <li>
+              <strong><u>Absolute Path</u>:</strong> The full URL to a resource
+              on the web.
+            </li>
+          </ul>
+
+          <p>
+            <strong><i>The Purpose:</i></strong> To correctly link files inside
+            a project or to external resources.
+          </p>
+
+          <article>
+            <h3>Relative File Paths</h3>
+            <p>Relative paths work within your project folder structure.</p>
+
+            <h4>Example Folder Structure:</h4>
+            <big>
+              <pre>
+my-website/
+├── index.html
+├── about.html
+├── images/
+│   ├── logo.png
+│   └── hero.jpg
+└── pages/
+    ├── contact.html
+    └── terms.html
+    </pre
+              >
+            </big>
+
+            <h4>Same Folder:</h4>
+            <pre><code>&lt;a href="lecture.html"&gt;About Us&lt;/a&gt;</code></pre>
+            <h4>Sub-folder (Going Down):</h4>
+            <pre><code>&lt;img src="images/logo_img.png" alt="My Website Logo"&gt;</code></pre>
+
+            <h4>Parent Folder (Going Up):</h4>
+            <pre><code>&lt;img src="../images/logo.jpg" alt="My Website Logo"&gt;</code></pre>
+
+            <p>
+              <strong
+                ><u><i>Key Point</i></u
+                >:</strong
+              >
+              Use <code>../</code> to move up one folder level.
+            </p>
+
+            <h3>Absolute File Paths</h3>
+            <p>
+              Absolute paths give the complete address of a file on the
+              internet.
+            </p>
+            <pre><code>&lt;a href="https://www.google.com"&gt;Search on Google&lt;/a&gt;</code></pre>
+
+            <p>
+              <strong><i>Warning</i>:</strong> Never use absolute paths for your
+              local files (like
+              <code>C:/Users/YourName/website/image.png</code>), because they
+              will break when uploaded to a server!
+            </p>
+          </article>
+        </section>
+
+        <section id="boilerplate">
+          <h2>What is HTML Boilerplate? 📝</h2>
+          <p>
+            In HTML, a <b>boilerplate</b> is the standard starting code that
+            every web page needs. It gives the browser essential instructions to
+            properly render the page.
+          </p>
+
+          <h3>
+            Boilerplate Elements (&lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt;,
+            &lt;body&gt;)
+          </h3>
+          <ul type="none">
+            <li>
+              <strong><u>&lt;!DOCTYPE html&gt;</u>:</strong> Tells the browser
+              to use HTML5.
+            </li>
+            <br />
+            <li>
+              <strong><u>&lt;html&gt;</u>:</strong> Root element of the page.
+            </li>
+            <br />
+            <li>
+              <strong><u>&lt;head&gt;</u>:</strong> Contains metadata, title,
+              links, etc.
+            </li>
+            <br />
+            <li>
+              <strong><u>&lt;body&gt;</u>:</strong> Contains all visible content
+              of the page.
+            </li>
+            <br />
+          </ul>
+
+          <article>
+            <h3>The Standard HTML5 Boilerplate</h3>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Your content goes here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre
+            >
+
+            <h3>Breaking Down the Boilerplate</h3>
+            <ul>
+              <li><b>&lt;!DOCTYPE html&gt;:</b> Defines HTML5 standard.</li>
+              <li>
+                <b>&lt;html lang="en"&gt;:</b> Root element with language set to
+                English.
+              </li>
+              <li>
+                <b>&lt;meta charset="UTF-8"&gt;:</b> Ensures proper text
+                encoding.
+              </li>
+              <li>
+                <b>&lt;meta name="viewport"&gt;:</b> Makes the site
+                mobile-friendly.
+              </li>
+              <li><b>&lt;title&gt;:</b> Sets the browser tab title.</li>
+              <li><b>&lt;body&gt;:</b> Holds visible content.</li>
+            </ul>
+
+            <h4></h4>
+            <p>
+              <strong
+                ><u><i>Pro Tip</i></u
+                >:</strong
+              >
+              Always include the viewport meta tag for responsive design!
+            </p>
+          </article>
+        </section>
+
+        <section id="structure">
+          <h2>What is Page Structure in HTML? 📃</h2>
+          <p>
+            In HTML, <strong>semantic structure</strong> organizes content
+            meaningfully using tags like
+            <strong>
+              &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;,
+              &lt;article&gt;, and &lt;footer&gt; </strong
+            >. This improves <strong>accessibility and SEO</strong>.
+          </p>
+
+          <h3>Semantic Elements</h3>
+          <ul type="none">
+            <li>
+              <b>&lt;header&gt;:</b> Top section, usually with
+              logo/title/navigation.
+            </li>
+            <br />
+            <li><b>&lt;nav&gt;:</b> Defines navigation menus.</li>
+            <br />
+            <li>
+              <b>&lt;main&gt;:</b> Holds the primary content (only one per
+              page).
+            </li>
+            <br />
+            <li><b>&lt;section&gt;:</b> Groups related content.</li>
+            <br />
+            <li>
+              <b>&lt;article&gt;:</b> Independent content like blog posts,
+              cards, etc.
+            </li>
+            <br />
+            <li>
+              <b>&lt;footer&gt;:</b> Bottom area with copyright/contact info.
+            </li>
+            <br />
+          </ul>
+
+          <article>
+            <h3>Basic Page Structure</h3>
+            <pre>
+&lt;header&gt;
+  &lt;h1&gt;Website Title&lt;/h1&gt;
+  &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;article&gt;...&lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Copyright Info&lt;/p&gt;
+&lt;/footer&gt;
+    </pre
+            >
+
+            <p>
+              <strong
+                ><u><i>Remember</i></u
+                >:</strong
+              >
+              There should be only one <b>&lt;main&gt;</b> element per page.
+            </p>
+          </article>
+        </section>
+
+        <section id="div-span">
+          <h2>What is Div, Span, Class & ID in HTML? 🧊</h2>
+          <p>
+            HTML provides generic containers <b>&lt;div&gt;</b> and
+            <b>&lt;span&gt;</b> that are styled or targeted with
+            <b>class</b> and <b>id</b> attributes.
+          </p>
+
+          <h3>Div and Span Elements</h3>
+          <ul type="none">
+            <li>
+              <b>&lt;div&gt;:</b> Block-level container for grouping content.
+            </li>
+            <br />
+            <li>
+              <b>&lt;span&gt;:</b> Inline container for styling small text
+              portions.
+            </li>
+            <br />
+          </ul>
+
+          <h3>Class and ID Attributes</h3>
+          <ul type="none">
+            <li><b>Class:</b> Reusable selector for multiple elements.</li>
+            <br />
+            <li><b>ID:</b> Unique identifier for one specific element.</li>
+            <br />
+          </ul>
+
+          <article>
+            <h3>Examples</h3>
+            <h4>Div Example:</h4>
+            <pre>
+&lt;div&gt;
+  &lt;h2&gt;Group Title&lt;/h2&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+&lt;/div&gt;
+    </pre
+            >
+
+            <h4>Span Example:</h4>
+            <pre>
+&lt;p&gt;This is &lt;span&gt;important&lt;/span&gt; text.&lt;/p&gt;
+    </pre
+            >
+
+            <h4>Class vs ID Example:</h4>
+            <pre>
+&lt;div class="product-card"&gt;Product 1&lt;/div&gt;
+&lt;div class="product-card" id="featured-product"&gt;Product 2&lt;/div&gt;
+&lt;div class="product-card"&gt;Product 3&lt;/div&gt;
+    </pre
+            >
+
+            <p>
+              <strong
+                ><i><u>Remember</u></i
+                >:</strong
+              >
+              IDs must be unique; classes can be reused.
+            </p>
+          </article>
+        </section>
+
+        <section id="multi-page">
+          <h2>What is a Multi-page Website? 📒</h2>
+          <p>
+            A <b>multi-page website</b> is a site with multiple HTML files
+            linked together. Each page has consistent navigation to connect
+            them.
+          </p>
+
+          <h3>Navigation and Linking</h3>
+          <ul type="none">
+            <li>
+              <b>&lt;nav&gt;:</b> Contains menus for navigating between pages.
+            </li>
+            <br />
+            <li><b>&lt;a&gt;:</b> The anchor tag, used to create links.</li>
+            <br />
+          </ul>
+
+          <article>
+            <h3>Example Navigation</h3>
+            <pre>
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+    </pre
+            >
+          </article>
+        </section>
+
+        <section>
+          <h2>All topics from this page are covered in this video lecture -</h2>
+          <p>Watch these video to reinforce what you've learned about HTML:</p>
+
+          <center>
+            <iframe
+              width="700"
+              height="400"
+              src="https://www.youtube.com/embed/k78lNSAB8VY?list=PLQEaRBV9gAFsistSzOgnD4cWgFGRVda4X"
+              title="File Path in HTML | HTML BoilerPlate Code | DIV + Class + ID | HTML Full Course #03"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <p>
+              <a href="https://youtu.be/k78lNSAB8VY" target="_blank"
+                ><i>Watch this lecture on YouTube</i></a
+              >
+            </p>
+          </center>
+        </section>
+      </main>
+
+      <br /><br />
+      <hr />
+      <br />
+
+      <footer>
+        <center>
+          <table cellpadding="3" cellspacing="0" width="80%">
+            <tr>
+              <th colspan="4">
+                <h2>Defense Draft</h2>
+                <p>
+                  Your trusted digital notebook for organizing and protecting
+                  lecture notes
+                </p>
+              </th>
+            </tr>
+            <tr>
+              <center>
+                <th width="25%">About</th>
+                <th width="25%">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Links
+                </th>
+                <th width="25%">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company
+                </th>
+                <th width="25%">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support
+                </th>
+              </center>
+            </tr>
+            <tr valign="top">
+              <td>
+                <center>
+                  <p>
+                    <strong><i>Defense Draft</i></strong> helps students and
+                    professionals keep their notes safe, accessible, and well
+                    organized.
+                  </p>
+                </center>
+              </td>
+              <td>
+                <ul type="none">
+                  <center>
+                    <li><a href="./lecture1.html">Lecture 1</a></li>
+                    <li><a href="./lecture2.html">Lecture 2</a></li>
+                    <li><a href="./lecture3.html">Lecture 3</a></li>
+                    <li><a href="./lecture4.html">Lecture 4</a></li>
+                    <li><a href="./lecture5.html">Lecture 5</a></li>
+                    <li><a href="./lecture6.html">Lecture 6</a></li>
+                  </center>
+                </ul>
+              </td>
+              <td>
+                <ul type="none">
+                  <center>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Legal</a></li>
+                  </center>
+                </ul>
+              </td>
+              <td>
+                <ul type="none">
+                  <center>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">System Status</a></li>
+                  </center>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="center">
+                <hr />
+                <p>
+                  Copyright &copy; <i>2025 Defense Draft Pvt. Ltd.</i>
+                  <b>All rights reserved</b>.
+                  <br />
+                  <a href="#">Sitemap</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#"
+                    >Accessibility</a
+                  >&nbsp; | &nbsp;<a href="#">Language</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </footer>
+    </font>
+  </body>
+</html>
